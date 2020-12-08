@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="libs/chiefSlider/chiefSlider.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/logo.png">
+  <title>Photo Lab</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__center--top">
+      <div class="menu-btn">
+        <span></span>
+      </div>
+      <a href="#" class="logo">
+        photo
+        <img src="img/logo.png" alt="logo" class="logo-img">
+        lab
+      </a>
+      <nav class="header--nav">
+        <a href="#" class="header--nav--link">Главная</a>
+        <a href="#" class="header--nav--link">О нас</a>
+        <a href="#" class="header--nav--link">Обучение</a>
+        <a href="#" class="header--nav--link">Портфолио</a>
+        <a href="#" class="header--nav--link">Отзывы</a>
+        <a href="#" class="header--nav--link">Контакты</a>
+      </nav>
+      <div class="header__search--block">
+        <input type="text" class="search--block--input">
+        <img src="img/search.svg" alt="search" class="search--block--img">
+      </div>
+    </div>
+    <nav class="burger-menu">
+      <a href="#" class="header--nav--link">Главная</a>
+      <a href="#" class="header--nav--link">О нас</a>
+      <a href="#" class="header--nav--link">Обучение</a>
+      <a href="#" class="header--nav--link">Портфолио</a>
+      <a href="#" class="header--nav--link">Отзывы</a>
+      <a href="#" class="header--nav--link">Контакты</a>
+    </nav>
+    <div class="header__bottom">
+      <aside class="header__left">
+        <a href="#" class="header__left--link"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="header__left--link"><i class="fab fa-vk"></i></a>
+        <a href="#" class="header__left--link"><i class="fab fa-telegram-plane"></i></a>
+        <a href="#" class="header__left--link"><i class="fab fa-twitter"></i></a>
+      </aside>
+      <div class="header__center">
+        <div class="swiper-container1">
+          <!-- Additional required wrapper -->
+            <div class="swiper-slide-header fade">
+              <h3 class="slide-subtitle">базовый курс</h3>
+              <h1 class="slide-title">Основы фотографии</h1>
+              <p class="slide-description">Курс «Основы фотографии» предназначен для тех, кто желает овладеть функционалом своего фотоаппарата, освоить принципы работы с цифровыми файлами, научиться качественно применять приёмы постобработки. </p>
+              <button class="btn-more">подробнее</button>
+            </div>
+            <div class="swiper-slide-header fade">
+              <h3 class="slide-subtitle">Lorem, ipsum.~</h3>
+              <h1 class="slide-title">Lorem, ipsum.</h1>
+              <p class="slide-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni delectus expedita saepe doloremque omnis. Nobis maiores voluptate veniam enim suscipit aut modi harum numquam quidem iusto, perferendis est tempore? Iste! </p>
+              <button class="btn-more">подробнее</button>
+            </div>
+            <div class="swiper-slide-header fade">
+              <h3 class="slide-subtitle">Lorem, ipsum.</h3>
+              <h1 class="slide-title">Lorem, ipsum.</h1>
+              <p class="slide-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas sed nisi aperiam facere ratione laudantium? </p>
+              <button class="btn-more">подробнее</button>
+            </div>
+            <div class="swiper-slide-header fade">
+              <h3 class="slide-subtitle">Lorem.</h3>
+              <h1 class="slide-title">Lorem, ipsum.</h1>
+              <p class="slide-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est omnis, fugit consectetur quis saepe quas corporis itaque nobis ex non. </p>
+              <button class="btn-more">подробнее</button>
+            </div>
+            <div class="swiper-slide-header fade">
+              <h3 class="slide-subtitle">Lorem ipsum dolor sit.</h3>
+              <h1 class="slide-title">Lorem, ipsum dolor.</h1>
+              <p class="slide-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo incidunt mollitia eveniet eum ut corrupti dolorum illo? Nobis iusto, quidem fugit ratione reiciendis maxime voluptatibus. </p>
+              <button class="btn-more">подробнее</button>
+            </div>
+        </div>
+      </div>  
+      <aside class="header__right">
+        <div class="pagination--button active" onclick="currentSlide(1)"></div>
+        <div class="pagination--button" onclick="currentSlide(2)"></div>
+        <div class="pagination--button" onclick="currentSlide(3)"></div>
+        <div class="pagination--button" onclick="currentSlide(4)"></div>
+        <div class="pagination--button" onclick="currentSlide(5)"></div>
+      </aside>
+    </div>
+  </header>
+  <section class="about-us">
+    <div class="container">
+      <div class="about-us__content">
+        <div class="about-us--text">
+          <h1 class="about-us--title">О нас</h1>
+          <p class="about-us--description">Школа фотографии Photo Lab – это авторский образовательный проект, предлагающий качественное обучение современной фотографии. <br> В фотошколе собран уникальный коллектив преподавателей: члены Союза фотохудожников России, искусствоведы, галерейные фотографы, выставляющие свои работы на площадках России, Европы, США.</p>
+          <div class="about-us--advantages">
+            <div class="advantages--item">
+              <img src="img/advantages-imgs/1.png" alt="advantage--img" class="advantage--img">
+              <h3 class="advantage--title">Инливидуальный подход</h3>
+              <p class="advantage--description">В нашей школе ограничение  в группы обучения по 7-10 человек, преподаватель на занятии может уделить время каждому студенту</p>
+            </div>
+            <div class="advantages--item">
+              <img src="img/advantages-imgs/2.png" alt="advantage--img" class="advantage--img">
+              <h3 class="advantage--title">Лучшая фототехника</h3>
+              <p class="advantage--description">Мы предоставляем технику высшего качества. Все новинки вы можете протестировать на занятиях абсолютно бесплатно!</p>
+            </div>
+            <div class="advantages--item">
+              <img src="img/advantages-imgs/3.png" alt="advantage--img" class="advantage--img">
+              <h3 class="advantage--title">Эффективное обучение</h3>
+              <p class="advantage--description">Мы бросаем вызов устоявшимся принципам обучения и достигаем невозомжного. Наши студенты публикуются в журналах!</p>
+            </div>
+          </div>
+        </div>
+        <img src="img/about-us--img.png" alt="photograph" class="about-us--img">
+      </div>
+    </div>
+  </section>
+  <section class="study">
+    <div class="container">
+      <div class="study__content">
+        <h1 class="study--title">Обучение</h1>
+          <div class="slider">
+            <div class="slider__wrapper">
+              <div class="slider__item">
+                <div class="swiper-slide-study">
+                  <img src="img//study-imgs/1.png" alt="man" class="study--slide--img">
+                  <h2 class="study--slide--title">Студийная съёмка</h2>
+                  <p class="study--slide--description">
+                    Курс профессиональной студийной съёмки. Готовит квалифицированных специалистов современной фотоиндустрии. Теория, практика в различных студиях и на пленэре. Создание портфолио.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="swiper-slide-study">
+                  <img src="img//study-imgs/2.png" alt="man" class="study--slide--img">
+                  <h2 class="study--slide--title">Основы фотографии</h2>
+                  <p class="study--slide--description">
+                    Полный курс фотографии для начинающих. Режимы съёмки, работа со светом, цветовосприятие, студийная и выездная прктика, обработка, композиция. Регулярные домашние задания.
+                  </p>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="swiper-slide-study">
+                  <img src="img//study-imgs/3.png" alt="man" class="study--slide--img">
+                  <h2 class="study--slide--title">Портретная фотография</h2>
+                  <p class="study--slide--description">
+                    Авторский курс Марго Овчаренко. Технология и сила интимного портрета. Актуальные тенденции и современный язык, основанные на классической традиции портретной фотографии.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <a class="slider__control slider__control_left" href="#" role="button"></a>
+            <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+          </div>
+        </div>
+      <!-- ./study-content -->
+    </div>
+    <!-- ./container -->
+  </section>
+  <!-- /.study -->
+  <section class="student-work">
+    <div class="container">
+      <div class="student-work__content">
+        <h1 class="student-work--title">Работы студентов</h1>
+        <nav class="student-work--nav">
+          <a href="#" class="tab-link active" data-tab-work-name="all-works">Все работы</a>
+          <a href="#" class="tab-link" data-tab-work-name="portraits">Портреты</a>
+          <a href="#" class="tab-link" data-tab-work-name="architecture">Архитектура</a>
+          <a href="#" class="tab-link" data-tab-work-name="nature">Природа</a>
+          <a href="#" class="tab-link" data-tab-work-name="different">Разное</a>
+        </nav>
+        <div class="student-work--dropdown fade">
+          <p class="dropdown--tab-link" data-tab-work-name="all-works">
+            <span class="selected-tab">Все работы</span> 
+            <i class="fas fa-chevron-right tab-arrow"></i>
+          </p>
+          <nav class="student-work--dropdown--content fade">
+            <a href="#" class="dropdown--tab-link" data-tab-work-name="portraits">Портреты</a>
+            <a href="#" class="dropdown--tab-link" data-tab-work-name="architecture">Архитектура</a>
+            <a href="#" class="dropdown--tab-link" data-tab-work-name="nature">Природа</a>
+            <a href="#" class="dropdown--tab-link" data-tab-work-name="different">Разное</a>
+          </nav>
+        </div>
+        <div class="student-work__tabs--content active all-works">
+          <img src="./img/student-work-imgs/All works/1.png" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/All works/2.png" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/All works/3.png" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/All works/4.png" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/All works/5.png" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/All works/6.png" alt="student-work" class="student-work__img">
+        </div>
+        <div class="student-work__tabs--content portraits">
+          <img src="./img/student-work-imgs/Portraits/1.jpg" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/Portraits/2.jpg" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/Portraits/3.jpg" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/Portraits/4.jpg" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/Portraits/5.jpg" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/Portraits/6.jpg" alt="student-work" class="student-work__img">
+        </div>
+        <div class="student-work__tabs--content architecture">
+          <img src="./img/student-work-imgs/Architecture/1.jpg" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/Architecture/2.jpg" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/Architecture/3.jpg" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/Architecture/4.jpg" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/Architecture/5.jpg" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/Architecture/6.jpg" alt="student-work" class="student-work__img">
+        </div>
+        <div class="student-work__tabs--content nature">
+          <img src="./img/student-work-imgs/Nature/1.jpg" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/Nature/2.jpg" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/Nature/3.jpg" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/Nature/4.jpg" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/Nature/5.jpg" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/Nature/6.jpg" alt="student-work" class="student-work__img">
+        </div>
+        <div class="student-work__tabs--content different">
+          <img src="./img/student-work-imgs/Different/1.jpg" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/Different/2.jpg" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/Different/3.jpg" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/Different/4.jpg" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/Different/5.jpg" alt="student-work" class="student-work__img">
+          <img src="./img/student-work-imgs/Different/6.jpg" alt="student-work" class="student-work__img">
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.student-work -->
+  <script src="js/libs.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
+
