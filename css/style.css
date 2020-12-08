@@ -1073,7 +1073,9 @@
   max-width: 30%;
   margin-bottom: 20px;
   height: 250px;
-  max-height: 250px; }
+  max-height: 250px;
+  object-fit: cover;
+}
 
 @media (max-width: 768px) {
   .student-work--nav {
